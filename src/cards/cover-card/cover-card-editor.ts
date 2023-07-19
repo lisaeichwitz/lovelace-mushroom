@@ -16,6 +16,7 @@ const COVER_LABELS = [
     "show_buttons_control",
     "show_position_control",
     "show_tilt_position_control",
+    "enable_icon_color"
 ];
 
 const SCHEMA: HaFormSchema[] = [
@@ -30,6 +31,7 @@ const SCHEMA: HaFormSchema[] = [
             { name: "show_position_control", selector: { boolean: {} } },
             { name: "show_tilt_position_control", selector: { boolean: {} } },
             { name: "show_buttons_control", selector: { boolean: {} } },
+            { name: "enable_icon_color", selector: { boolean: {} } },
         ],
     },
     ...computeActionsFormSchema(),

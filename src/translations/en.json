@@ -68,7 +68,8 @@
             "cover": {
                 "show_buttons_control": "Control buttons?",
                 "show_position_control": "Position control?",
-                "show_tilt_position_control": "Tilt control?"
+                "show_tilt_position_control": "Tilt control?",
+                "enable_icon_color": "Automatic icon color?"
             },
             "alarm_control_panel": {
                 "show_keypad": "Show keypad"

@@ -68,7 +68,8 @@
             "cover": {
                 "show_buttons_control": "Schaltflächensteuerung?",
                 "show_position_control": "Positionssteuerung?",
-                "show_tilt_position_control": "Winkelsteuerung?"
+                "show_tilt_position_control": "Winkelsteuerung?",
+                "enable_icon_color": "Icon Farbe automatisch?"
             },
             "alarm_control_panel": {
                 "show_keypad": "Keypad anzeigen"

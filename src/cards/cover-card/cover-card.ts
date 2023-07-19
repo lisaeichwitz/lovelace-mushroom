@@ -37,12 +37,13 @@ import "./controls/cover-tilt-position-control";
 import { CoverCardConfig } from "./cover-card-config";
 import { getPosition, getStateColor } from "./utils";
 
-type CoverCardControl = "buttons_control" | "position_control" | "tilt_position_control";
+type CoverCardControl = "buttons_control" | "position_control" | "tilt_position_control" | "icon_color";
 
 const CONTROLS_ICONS: Record<CoverCardControl, string> = {
     buttons_control: "mdi:gesture-tap-button",
     position_control: "mdi:gesture-swipe-horizontal",
     tilt_position_control: "mdi:rotate-right",
+    icon_color: "mdi:brush-variant"
 };
 
 registerCustomCard({
@@ -110,6 +111,9 @@ export class CoverCard extends MushroomBaseCard implements LovelaceCard {
         }
         if (this._config?.show_tilt_position_control) {
             controls.push("tilt_position_control");
+        }
+        if (this._config?.enable_icon_color) {
+            controls.push("icon_color");
         }
         this._controls = controls;
         this._activeControl = controls[0];
